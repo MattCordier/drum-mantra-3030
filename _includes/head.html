@@ -9,13 +9,16 @@
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="/public/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="css/landing-page.css" rel="stylesheet">
-
+    {% if page.css %}
+    {% for stylesheet in page.css %} <link href="/public/css/{{ stylesheet }}.css" rel="stylesheet"> {% endfor %}
+    {% else %}
+        <link href="/public/css/main.css" rel="stylesheet">
+    {% endif %}    
     <!-- Custom Fonts -->
-    <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="{{ site.baseurl }}/font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel="stylesheet">
 
 

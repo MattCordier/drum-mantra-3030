@@ -1,0 +1,79 @@
+#chicago {
+	background: url(../img/dm-3030-bg.jpg) no-repeat center center fixed;
+  background-size: cover;
+  padding: 2em 0;
+}
+
+.drum-show__h2 {
+	color: #fbd335;
+	font-size: 4em;
+  font-weight: 900;
+  text-shadow: -8px 3px 6px rgba(0,0,0,0.7);
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.drum-show__span--heading {
+	color: #FFF;
+	font-size: 2rem;
+}
+
+.drum-show__p {
+	color: #FFF;
+	font-size: 2rem;
+  text-shadow: -8px 3px 6px rgba(0,0,0,0.7);
+}
+
+.drum-show__p--3030 {
+	@extend .drum-show__p;
+	font-size: 2.5rem;
+	font-weight: 700;
+}
+
+.sample__h2 {
+	@extend .drum-show__p;
+	font-size: 2rem;
+	font-style: italic;
+	margin-top: 5rem;
+	line-height: 1.5;
+
+	&.email__h2 {
+		margin-top: 6rem;
+	}
+}
+
+.sample__p {
+	@extend .drum-show__p;
+	color: #fbd335;
+	font-size: 1.45rem;
+	font-style: italic;
+}
+
+.sample__div--buttons {
+	margin-bottom: 5rem;
+}
+
+.email-wrapper {
+	margin-top: 4rem;
+}
+
+.sample__hr {
+	border: 0;
+  height: 4px;
+  width: 85%;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(250, 250, 250, 1), rgba(0, 0, 0, 0));
+  margin: 5px auto;
+}
+
+.sample__btn {
+	display: inline-block;
+  background-color: purple;
+  color: #FFF;
+  font-size: 1.5em;
+  font-weight: 700;
+  padding: 10px 20px;
+  border: 1px solid #FFF;
+  border-radius: 5px;
+  margin: 1.25rem;
+}
+

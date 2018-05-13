@@ -18,6 +18,12 @@ copyright: 'Copyright &copy; 2018 Rich Stitzel Music. All Rights Reserved.'
 # Build settings
 markdown: kramdown
 permalink: pretty
+sass:
+  sass_dir: public/_scss
+  style: compressed
+
+plugins:
+  - octopress-autoprefixer
 
 # ----------------------- #
 #   3rd Party Settings    #

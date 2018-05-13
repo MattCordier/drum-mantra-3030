@@ -1,0 +1,49 @@
+.modal {
+	background: rgba(0, 0, 0, .8);
+}
+
+.modal-content {
+	background: #000;
+	border-radius: 10px;
+	border: 3px solid rgba(232,40,40, .7);
+}
+
+.modal-header {
+	border: none;
+}
+
+.modal-header .close {
+	color: purple;
+	font-size: 30px;
+	margin: 3px 10px 0 0;
+	text-shadow: none;
+	opacity: .5;
+
+	&:hover {
+		opacity: 1;
+	}
+}
+
+.modal-body {
+
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px; 
+  height: 0; 
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  
+}

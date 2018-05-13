@@ -1,11 +1,28 @@
 <!-- jQuery Version 1.11.0 -->
-<script src="js/jquery-1.11.0.js"></script>
+<script src="/public/js/jquery-1.11.0.js"></script>
 
 <!-- Plugin JavaScript -->
-    <script src="{{ "js/jquery.easing.min.js" | prepend: site.baseurl }}"></script>
+    <script src="{{ "/public/js/jquery.easing.min.js" | prepend: site.baseurl }}"></script>
 
 <!-- Bootstrap Core JavaScript -->
-<script src="js/bootstrap.min.js"></script>
+<script src="/public/js/bootstrap.min.js"></script>
 
 <!-- Custom Theme JavaScript -->
-<script src="js/landing-page.js"></script>
+<script src="/public/js/landing-page.js"></script>
+
+<script type="text/javascript">
+  $('#courseSampleModal').on('show.bs.modal', function (event) {
+  var button = $(event.relatedTarget) // Button that triggered the modal
+  var startTime = button.data('start-time') // Extract info from data-* attributes
+  var title = button.data('exercise-title')
+ 
+  var modal = $(this)
+  modal.find('.modal-title').text(title)
+  modal.find('.course__iframe').attr('src', 'https://www.youtube.com/embed/ERB_3KbhCbw?start=' + startTime + '&amp;rel=0&amp;controls=0&amp;showinfo=0')
+})
+
+  $('#courseSampleModal').on('hidden.bs.modal', function(event){
+  	var modal = $(this)
+  	modal.find('.course__iframe').attr('src', null)
+  })
+</script>
