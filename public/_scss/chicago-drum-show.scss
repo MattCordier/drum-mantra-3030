@@ -1,7 +1,7 @@
 #chicago {
 	background: url(../img/dm-3030-bg.jpg) no-repeat center center fixed;
   background-size: cover;
-  padding: 2em 0;
+  padding: 0;
 }
 
 .drum-show__h2 {
@@ -67,6 +67,7 @@
 
 .sample__btn {
 	display: inline-block;
+	min-width: 150px;
   background-color: purple;
   color: #FFF;
   font-size: 1.5em;
