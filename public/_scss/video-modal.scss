@@ -35,6 +35,10 @@
   height: 0; 
   overflow: hidden;
   margin-bottom: 5px;
+
+  &.intro {
+  	margin-bottom: 3rem;
+  }
 }
 
 .video-container iframe,
