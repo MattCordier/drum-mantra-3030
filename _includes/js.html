@@ -18,7 +18,7 @@
  
   var modal = $(this)
   modal.find('.modal-title').text(title)
-  modal.find('.course__iframe').attr('src', 'https://www.youtube.com/embed/' + videoID + '?rel=0&amp;showinfo=0')
+  modal.find('.course__iframe').attr('src', 'https://player.vimeo.com/video/' + videoID)
 })
 
   $('#courseSampleModal').on('hidden.bs.modal', function(event){
