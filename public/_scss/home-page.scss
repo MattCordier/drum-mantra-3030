@@ -1,0 +1,36 @@
+#home {
+		background: url(../img/dm-3030-bg.jpg) no-repeat center center fixed;
+	  background-size: cover;
+	  padding: 0; 
+}
+
+.home__section {
+	padding-bottom: 4em;
+}
+
+.home__div--intro {
+	padding: 4em 0 2em;
+}
+
+.home__p {
+	color: #FFF;
+	font-size: 2em;
+  text-shadow: -8px 3px 6px rgba(0,0,0,0.7);
+
+  @media (max-width: $screen-sm-max) {
+		font-size: 1.5em;
+	}
+}
+
+.home__h2 {
+	color: #fbd335;
+	font-size: 4em;
+  font-weight: 900;
+  text-shadow: -8px 3px 6px rgba(0,0,0,0.7);
+  margin-top: 0;
+  margin-bottom: 1rem;
+
+  @media (max-width: $screen-sm-max) {
+		font-size: 2.5em;
+	}
+}	 

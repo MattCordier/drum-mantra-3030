@@ -1,8 +1,35 @@
 ---
 layout: default
 title: DrumMantra 3030
-subTitle: Get Ready To Go Deeper 
-css: landing-page
+subTitle: Get Ready To Go Deeper
+body-id: home 
+css: 
+  - home-page
+  - main
 ---
+<section class="home__section">
+	<div class="container">
+		<div class="row">
+	    <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+	      <div class="home__div--intro">
+	        <p class="home__p text-center">Transform the way you practice drums with…</p>
+	        <h2 class="home__h2 text-center">The DrumMantra</h2>
 
-{% include header.html %}
+	        <div class="video-container">
+	          <iframe class="course__iframe" src="https://player.vimeo.com/video/271765160" frameborder="0" allowfullscreen></iframe>
+	        </div>
+	      </div><!-- /home__div--intro -->
+	    </div><!-- /col -->
+	  </div><!-- /row -->
+
+	  <div class="row">
+	    <div class="col-sm-12">
+	        <p class="home__p text-center"><em>Get 7 FREE Mini Lessons From The 3030 Today</em></p>
+	        {% include email-input.html %}
+	        <img src="/public/img/dm-3030-logo.png" alt="DrumMantra 3030" class="img-responsive center-block">  
+	      
+	        
+	    </div><!-- /col -->
+	  </div><!-- /row -->
+	</div><!-- /container -->  
+</section>

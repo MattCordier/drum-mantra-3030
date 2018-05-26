@@ -2,9 +2,8 @@
 <html>
 	{% include head.html %}
 
-	<body>
-		{% include header.html %}
-		{% include footer.html %}
+	<body id="{{ page.body-id }}">
+		{{ content }}
 		{% include js.html %}
 	</body>
 </html>
