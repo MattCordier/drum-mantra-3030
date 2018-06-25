@@ -1,0 +1,290 @@
+.sales-page--wrapper {
+	$accent: #CC5847;
+	$light: #F5F5F5;
+	$medium: #ACACAE;
+	$dark: #1D2731;
+	width: 100%;
+	
+	section {
+		padding: 3em 0;
+	}
+
+	.main__btn {
+		display: block;
+		min-width: 250px;
+	  background-color: $accent;
+	  color: #FFF;
+	  text-align: center;
+	  font-size: 1.5em;
+	  font-weight: 700;
+	  text-transform: uppercase;
+	  padding: 10px 20px;
+	  border-radius: 5px;
+	  margin: 1.25rem auto;
+
+	  &:hover {
+	  	cursor: pointer;
+	  	text-decoration: none;
+	  	background-color: darken($accent, 20%);
+	  }
+	}
+
+	/*------- Hero Section ---------*/
+	.hero__section {
+		background-color: $dark;
+	}
+
+	.hero__h1 {
+		color: #FFF;
+		font-size: 2.5em;
+		font-weight: 900;
+		margin-bottom: 1rem;
+
+		@media (max-width: $screen-xs-max) {
+			font-size: 2em;
+		}
+	}
+
+	.hero__p {
+		color: #FFF;
+		font-size: 1.25em;
+		font-weight: 500;
+		line-height: 2;
+
+		@media (max-width: $screen-xs-max) {
+			text-align: center;
+			font-size: 1.125em;
+		}
+	}
+
+	.hero__span {
+		display: inline-block;
+		border-bottom: 1px solid $accent;
+	}
+
+	.hero__p--time {
+		@extend .hero__p;
+		text-align: center;
+		text-transform: uppercase;
+		font-size: 1rem;
+
+		@media (max-width: $screen-xs-max) {
+			text-align: center;
+			font-size: .75rem;
+		}
+	}
+
+	.hero__span--time {
+		color: $accent;
+		font-size: 1.5rem;
+		margin-left: 5px;
+		margin-right: 3px;
+	}
+
+	/*------- Benefits Section ---------*/
+	.benefits__section {
+		background-color: #FFF;
+		padding-bottom: 8em;
+	}
+
+	/*------- Teacher Section ---------*/
+	.teacher__section {
+		background-color: $medium;
+		padding-bottom: 1em;
+	}
+
+	.about {
+	  background: #fff;
+	  border-radius: 5px;
+	  border: 2px solid $accent;
+	  margin: -8em auto 3.5em;	
+	  -webkit-box-shadow: 6px 3px 22px -5px rgba(29,39,49,1);
+		-moz-box-shadow: 6px 3px 22px -5px rgba(29,39,49,1);
+		box-shadow: 6px 3px 22px -5px rgba(29,39,49,1);
+	}
+
+	.about__h1 {
+	  color: $accent;
+	  font-weight: 900;
+	  margin-top: .25em;	
+	  margin-bottom: .25em;
+
+	  @media (max-width: $screen-md-max) {
+			font-size: 1.5em;
+		}
+		@media (max-width: $screen-sm-max) {
+			margin: 1.25rem 1.125rem .5rem;
+		}
+	}
+
+	.about__p {
+		color: $dark;
+	  font-size: 1.125em;
+	  font-weight: 700;
+
+	  @media (max-width: $screen-md-max) {
+			font-size: 1em;
+		}
+		@media (max-width: $screen-sm-max) {
+			margin: 0 1.125rem 1.125rem;
+		}
+	}
+
+	.about__p--details {
+		color: $dark;
+	  font-size: 1.125em;
+	  padding-right: 30px;
+
+	  @media (max-width: $screen-md-max) {
+			font-size: 1em;
+		}
+		@media (max-width: $screen-sm-max) {
+			margin: 0 1.125rem 1.125rem;
+		}
+	}
+
+	.quote-card__div {
+		@extend .about;
+		margin-top: 0;
+		color: $dark;
+		border: none;
+		padding-top: .25rem;
+
+		&.first {
+			margin-top: 1.5em;
+		}
+
+		@media (max-width: $screen-sm-max) {
+			padding: .25rem 0 0;
+		}
+	}
+
+	.quote__p {
+		color: $dark;
+		font-size: 1.125em;
+		font-weight: 500;
+		font-style: italic;
+		margin: 1em;
+	}
+
+	.student-quote__div {
+		background-color: $light;
+		padding-bottom: 1em;
+		border-radius: 0 0 5px 5px;
+		border-top: 1px solid $medium; 
+		padding: .5rem .5rem .75rem;
+	}
+
+	.student-quote__img {
+		max-width: 100px;
+		display: inline-block;
+		border-radius: 50%;
+		border: 2px solid $accent;
+		margin-top: -2rem;
+		margin-left: 1rem;
+	}
+
+	.student-quote__p--name {
+		display: inline-block;
+		color: $dark;
+		font-size: 1.25em;
+		font-weight: 700;
+		font-style: italic;
+		margin: 1.5rem 0 0 1.5rem;
+	}
+
+	.student-quote__p--detail {
+		display: inline-block;
+		font-size: 1rem;
+		font-weight: 500;
+		margin-bottom: 0;
+
+	}
+
+	/*-------- Testimony Section --------*/
+	.testimony__section {
+		background-color: $dark;
+	}
+
+	.testimony__h2 {
+		text-align: center;
+		color: #FFF;
+		font-size: 2em;
+		font-weight: 900;
+		margin-bottom: 2rem;
+
+		@media (max-width: $screen-sm-max) {
+			font-size: 1.5em;
+		}
+	}
+
+	.testimony__p--name {
+		color: #FFF;
+		font-size: 1.75em;
+		font-weight: 700;
+		margin-bottom: 0;
+	}
+
+	.testimonial__p--detail {
+		color: #FFF;
+		font-size: 1.125em;
+		font-weight: 500;
+		margin-bottom: 1.5rem;
+	}
+
+	/*-------- Guarantee Section --------*/
+	.guarantee__section {
+		background-color: $accent;
+
+	}
+
+	.guarantee__h2 {
+		color: #FFF;
+		font-size: 1.75em;
+		font-weight: 700;
+		text-transform: uppercase;
+		margin-top: 2rem;
+
+		@media (max-width: $screen-sm-max) {
+			margin-top: 0;
+			font-size: 1.5em;
+		}
+		@media (max-width: $screen-xs-max) {
+			margin-top: 2rem;
+		}
+	}
+
+	.guarantee__p {
+		color: #FFF;
+		font-size: 1.25em;
+		font-weight: 300;
+	}
+
+	.guarantee__p--name {
+		color: #FFF;
+		font-size: 1.5em;
+		font-weight: 900;
+	}
+
+	/*------- CTA Section ---------*/
+	.cta__section {
+		@extend .hero__section;
+	}
+
+	.cta__h1 {
+		@extend .hero__h1;	
+		margin-bottom: 2.5rem;		
+	}
+
+	.cta__p {
+		@extend .hero__p;
+	}
+
+	.cta__p--time {
+		@extend .hero__p--time;
+	}
+
+	.cta__span--time {
+		@extend .hero__span--time;
+	}
+}
