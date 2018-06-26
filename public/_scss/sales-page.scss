@@ -84,7 +84,39 @@
 	/*------- Benefits Section ---------*/
 	.benefits__section {
 		background-color: #FFF;
-		padding-bottom: 8em;
+		padding-bottom: 10em;
+	}
+
+	.benefits__div {
+		border-radius: 5px;
+		border: 2px solid $medium;
+		padding: 1rem 2rem;
+		-webkit-box-shadow: 6px 3px 22px -5px rgba(29,39,49,1);
+		-moz-box-shadow: 6px 3px 22px -5px rgba(29,39,49,1);
+		box-shadow: 6px 3px 22px -5px rgba(29,39,49,1);
+
+		@media (max-width: $screen-sm-max) {
+			margin-top: 2em;
+		}
+	}
+
+	.benefits__h2 {
+		color: $dark;
+		text-align: center;
+		text-transform: uppercase;
+		font-size: 1.25em;
+		font-weight: 700;
+		padding-bottom: .5rem;
+		border-bottom: 1px solid $accent;
+	}
+
+	.benefits__p {
+		color: $dark;
+	}
+
+	.benefits__li {
+		color: $dark;
+		margin-bottom: .75em;
 	}
 
 	/*------- Teacher Section ---------*/
@@ -101,6 +133,20 @@
 	  -webkit-box-shadow: 6px 3px 22px -5px rgba(29,39,49,1);
 		-moz-box-shadow: 6px 3px 22px -5px rgba(29,39,49,1);
 		box-shadow: 6px 3px 22px -5px rgba(29,39,49,1);
+	}
+
+	.about__img--rich {
+		border-radius: 3px 0 0 3px;
+
+		@media (max-width: $screen-sm-max) {
+			border-radius: 0;
+			margin-top: 1.5em;
+		}
+
+		@media (max-width: $screen-xs-max) {
+			border-radius: 3px 3px 0 0;
+			margin-top: 0;
+		}
 	}
 
 	.about__h1 {
@@ -132,12 +178,9 @@
 
 	.about__p--details {
 		color: $dark;
-	  font-size: 1.125em;
+	  font-size: 1em;
 	  padding-right: 30px;
-
-	  @media (max-width: $screen-md-max) {
-			font-size: 1em;
-		}
+	  
 		@media (max-width: $screen-sm-max) {
 			margin: 0 1.125rem 1.125rem;
 		}
@@ -152,6 +195,10 @@
 
 		&.first {
 			margin-top: 1.5em;
+
+			@media (max-width: $screen-sm-max) {
+				margin-top: .5em;
+			}
 		}
 
 		@media (max-width: $screen-sm-max) {
@@ -229,7 +276,25 @@
 		color: #FFF;
 		font-size: 1.125em;
 		font-weight: 500;
-		margin-bottom: 1.5rem;
+		margin-bottom: 4rem;
+	}
+
+	.testimonial__div--video {
+		border-radius: 3px;
+
+    padding-bottom: 50.25%;    
+
+    @media (max-width: $screen-sm-max) {
+    	padding-bottom: 47.25%;
+    }
+
+    @media (max-width: $screen-xs-max) {
+    	padding-bottom: 51.25%;
+    }
+
+    @media (max-width: $screen-iphone6plus) {
+    	padding-bottom: 48.25%;
+    }
 	}
 
 	/*-------- Guarantee Section --------*/
