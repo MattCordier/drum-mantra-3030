@@ -12,6 +12,7 @@
 	.main__btn {
 		display: block;
 		min-width: 250px;
+		max-width: 500px;
 	  background-color: $accent;
 	  color: #FFF;
 	  text-align: center;
@@ -58,7 +59,6 @@
 	}
 
 	.hero__span {
-		display: inline-block;
 		border-bottom: 1px solid $accent;
 	}
 
@@ -72,6 +72,9 @@
 			text-align: center;
 			font-size: .75rem;
 		}
+		 &.cta {
+		 	color: $dark
+		 }
 	}
 
 	.hero__span--time {
@@ -88,6 +91,7 @@
 	}
 
 	.benefits__div {
+		min-height: 561px;
 		border-radius: 5px;
 		border: 2px solid $medium;
 		padding: 1rem 2rem;
@@ -95,9 +99,25 @@
 		-moz-box-shadow: 6px 3px 22px -5px rgba(29,39,49,1);
 		box-shadow: 6px 3px 22px -5px rgba(29,39,49,1);
 
+		@media (max-width: $screen-md-max) {
+			min-height: 655px;
+		}
+
 		@media (max-width: $screen-sm-max) {
+			min-height: 0;
 			margin-top: 2em;
 		}
+		@media (max-width: $screen-xs-max) {
+			padding: 1rem;
+		}
+	}
+
+	.benefits__div--cta {
+		@extend .benefits__div;
+		margin-top: 5em;
+		margin-bottom: 1.5em;
+		min-height: 0;
+
 	}
 
 	.benefits__h2 {
@@ -106,18 +126,66 @@
 		text-transform: uppercase;
 		font-size: 1.25em;
 		font-weight: 700;
-		padding-bottom: .5rem;
+		padding-bottom: 1rem;
 		border-bottom: 1px solid $accent;
+		margin-bottom: 1.25rem;
+	}
+
+	.benefits__h2--cta {
+		@extend .benefits__h2;
+		font-size: 3em;
+		line-height: .8;
+		padding-bottom: 2rem;
+
+		@media (max-width: $screen-xs-max) {
+			font-size: 1.75em;
+			line-height: 1;
+			padding-bottom: 1rem;
+		}
+	}
+
+	.benefits__span--cta {
+		color: $accent;
+		font-size: 2rem;
+
+		@media (max-width: $screen-xs-max) {
+			font-size: 1.5rem;
+		}
 	}
 
 	.benefits__p {
 		color: $dark;
+
+		&:last-of-type {
+			margin-bottom: 2em;
+		}
+	}
+
+	.benefits__ul {
+		padding-left: 1em;
+		list-style-image: url('/public/img/sales-page/10x10-square.png'); 
 	}
 
 	.benefits__li {
 		color: $dark;
-		margin-bottom: .75em;
+		padding-left: .5em;
+		margin-bottom: 1em;
 	}
+
+	.benefits__li--cta {
+		@extend .benefits__li;
+		font-size: 1.5em;
+		font-weight: 700;
+
+		&:last-of-type {
+			margin-bottom: 2rem;
+		}
+
+		@media (max-width: $screen-xs-max) {
+			font-size: 1.25em;
+		}
+	}
+
 
 	/*------- Teacher Section ---------*/
 	.teacher__section {
@@ -172,6 +240,7 @@
 			font-size: 1em;
 		}
 		@media (max-width: $screen-sm-max) {
+			font-size: 1.125em;
 			margin: 0 1.125rem 1.125rem;
 		}
 	}
@@ -180,9 +249,14 @@
 		color: $dark;
 	  font-size: 1em;
 	  padding-right: 30px;
-	  
+
 		@media (max-width: $screen-sm-max) {
+			font-size: 1.125em;
 			margin: 0 1.125rem 1.125rem;
+
+			&:last-of-type {
+		  	margin-bottom: 2em;
+		  }
 		}
 	}
 
@@ -270,6 +344,10 @@
 		font-size: 1.75em;
 		font-weight: 700;
 		margin-bottom: 0;
+
+		@media (max-width: $screen-xs-max) {
+			font-size: 1.25em;
+		}
 	}
 
 	.testimonial__p--detail {
@@ -277,6 +355,10 @@
 		font-size: 1.125em;
 		font-weight: 500;
 		margin-bottom: 4rem;
+
+		@media (max-width: $screen-xs-max) {
+			font-size: 1em;
+		}
 	}
 
 	.testimonial__div--video {
