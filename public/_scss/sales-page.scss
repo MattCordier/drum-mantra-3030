@@ -50,11 +50,19 @@
 		color: #FFF;
 		font-size: 1.25em;
 		font-weight: 500;
-		line-height: 2;
+		line-height: 1.6;
 
 		@media (max-width: $screen-xs-max) {
 			text-align: center;
 			font-size: 1.125em;
+		}
+
+		&:last-of-type {
+			margin-bottom: 2rem;
+
+			@media (max-width: $screen-xs-max) {
+			margin-bottom: 3rem;
+		}
 		}
 	}
 
@@ -95,9 +103,9 @@
 		border-radius: 5px;
 		border: 2px solid $medium;
 		padding: 1rem 2rem;
-		-webkit-box-shadow: 6px 3px 22px -5px rgba(29,39,49,1);
-		-moz-box-shadow: 6px 3px 22px -5px rgba(29,39,49,1);
-		box-shadow: 6px 3px 22px -5px rgba(29,39,49,1);
+		-webkit-box-shadow: 6px 3px 22px -5px rgba(29,39,49,.4);
+		-moz-box-shadow: 6px 3px 22px -5px rgba(29,39,49,.4);
+		box-shadow: 6px 3px 22px -5px rgba(29,39,49,.4);
 
 		@media (max-width: $screen-md-max) {
 			min-height: 655px;
@@ -198,9 +206,9 @@
 	  border-radius: 5px;
 	  border: 2px solid $accent;
 	  margin: -8em auto 3.5em;	
-	  -webkit-box-shadow: 6px 3px 22px -5px rgba(29,39,49,1);
-		-moz-box-shadow: 6px 3px 22px -5px rgba(29,39,49,1);
-		box-shadow: 6px 3px 22px -5px rgba(29,39,49,1);
+	  -webkit-box-shadow: 6px 3px 22px -5px rgba(29,39,49,.4);
+		-moz-box-shadow: 6px 3px 22px -5px rgba(29,39,49,.4);
+		box-shadow: 6px 3px 22px -5px rgba(29,39,49,.4);
 	}
 
 	.about__img--rich {
