@@ -1,0 +1,197 @@
+
+<script type="text/javascript">
+/*<![CDATA[*/
+
+(function () {
+  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+  if (window.ShopifyBuy) {
+    if (window.ShopifyBuy.UI) {
+      ShopifyBuyInit();
+    } else {
+      loadScript();
+    }
+  } else {
+    loadScript();
+  }
+
+  function loadScript() {
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = scriptURL;
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+    script.onload = ShopifyBuyInit;
+  }
+
+  function ShopifyBuyInit() {
+    var client = ShopifyBuy.buildClient({
+      domain: 'the-drummantra.myshopify.com',
+      apiKey: '619e732073452c78b483bdbc564fe3cd',
+      appId: '6',
+    });
+
+    ShopifyBuy.UI.onReady(client).then(function (ui) {
+      ui.createComponent('product', {
+        id: [1322072670290],
+        node: document.getElementById('product-component-543be1a168c'),
+        moneyFormat: '%24%7B%7Bamount%7D%7D',
+        options: {
+  "product": {
+    "buttonDestination": "checkout",
+    "variantId": "all",
+    "width": "285px",
+    "contents": {
+      "img": false,
+      "imgWithCarousel": false,
+      "title": false,
+      "variantTitle": false,
+      "price": false,
+      "description": false,
+      "buttonWithQuantity": false,
+      "quantity": false
+    },
+    "text": {
+      "button": "Join The Course"
+    },
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0",
+          "margin-bottom": "50px"
+        }
+      },
+      "button": {
+        "display": "block",
+        "background-color": "#cc5847",
+        "font-size": "24px",
+        "font-weight": "700",
+        "text-transform": "uppercase",
+        "padding-top": "17px",
+        "padding-bottom": "17px",
+        "padding-left": "20px",
+        "padding-right": "20px",
+        ":hover": {
+          "background-color": "#992514"
+        },
+        "border-radius": "5px",
+        ":focus": {
+          "background-color": "#992514"
+        }
+      },
+      "title": {
+        "font-size": "26px"
+      },
+      "price": {
+        "font-size": "18px"
+      },
+      "quantityInput": {
+        "font-size": "18px",
+        "padding-top": "17px",
+        "padding-bottom": "17px"
+      },
+      "compareAt": {
+        "font-size": "15px"
+      }
+    }
+  },
+  "cart": {
+    "contents": {
+      "button": true
+    },
+    "styles": {
+      "button": {
+        "background-color": "#cc5847",
+        "font-size": "18px",
+        "padding-top": "17px",
+        "padding-bottom": "17px",
+        ":hover": {
+          "background-color": "#b84f40"
+        },
+        "border-radius": "5px",
+        ":focus": {
+          "background-color": "#b84f40"
+        }
+      },
+      "footer": {
+        "background-color": "#ffffff"
+      }
+    }
+  },
+  "modalProduct": {
+    "contents": {
+      "img": false,
+      "imgWithCarousel": true,
+      "variantTitle": false,
+      "buttonWithQuantity": true,
+      "button": false,
+      "quantity": false
+    },
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0px",
+          "margin-bottom": "0px"
+        }
+      },
+      "button": {
+        "background-color": "#cc5847",
+        "font-size": "18px",
+        "padding-top": "17px",
+        "padding-bottom": "17px",
+        "padding-left": "30px",
+        "padding-right": "30px",
+        ":hover": {
+          "background-color": "#b84f40"
+        },
+        "border-radius": "5px",
+        ":focus": {
+          "background-color": "#b84f40"
+        }
+      },
+      "quantityInput": {
+        "font-size": "18px",
+        "padding-top": "17px",
+        "padding-bottom": "17px"
+      }
+    }
+  },
+  "toggle": {
+    "styles": {
+      "toggle": {
+        "background-color": "#cc5847",
+        ":hover": {
+          "background-color": "#b84f40"
+        },
+        ":focus": {
+          "background-color": "#b84f40"
+        }
+      },
+      "count": {
+        "color": "#ffffff",
+        ":hover": {
+          "color": "#ffffff"
+        },
+        "font-size": "18px"
+      },
+      "iconPath": {
+        "fill": "#ffffff"
+      }
+    }
+  },
+  "productSet": {
+    "styles": {
+      "products": {
+        "@media (min-width: 601px)": {
+          "margin-left": "-20px"
+        }
+      }
+    }
+  }
+}
+      });
+    });
+  }
+})();
+/*]]>*/
+</script>
