@@ -169,6 +169,13 @@
 		}
 	}
 
+	.benefits__p--cta {
+		color: $dark;
+		text-align: center;
+		font-size: 1.125em;
+		font-style: italic;
+	}
+
 	.benefits__ul {
 		padding-left: 1em;
 		list-style-image: url('/public/img/sales-page/10x10-square.png'); 

@@ -18,6 +18,14 @@
 <script src="/public/js/timer.js"></script>
 
 <script type="text/javascript">
+  
+  $('.main__btn').on('click', function(){
+     
+       $("html, body").animate({ scrollTop: $('#cta').offset().top}, 500);
+    });
+</script>
+
+<script type="text/javascript">
   $('#courseSampleModal').on('show.bs.modal', function (event) {
   var button = $(event.relatedTarget) // Button that triggered the modal
   var videoID = button.data('video-id') // Extract info from data-* attributes
