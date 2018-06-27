@@ -142,7 +142,7 @@
 	.benefits__h2--cta {
 		@extend .benefits__h2;
 		font-size: 3em;
-		line-height: .8;
+		line-height: 50px;
 		padding-bottom: 2rem;
 
 		@media (max-width: $screen-xs-max) {
@@ -154,7 +154,7 @@
 
 	.benefits__span--cta {
 		color: $accent;
-		font-size: 2rem;
+		font-size: 2.75rem;
 
 		@media (max-width: $screen-xs-max) {
 			font-size: 1.5rem;
