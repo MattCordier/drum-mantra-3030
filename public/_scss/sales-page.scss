@@ -5,6 +5,15 @@
 	$dark: #1D2731;
 	width: 100%;
 	
+	header {
+		background-color: $accent;
+		padding: 7px 0;
+		max-height: 50px;
+	}
+
+	.header__img {
+		max-height: 40px;
+	}
 	section {
 		padding: 3em 0;
 	}
@@ -39,7 +48,7 @@
 		color: #FFF;
 		font-size: 2.5em;
 		font-weight: 900;
-		margin-bottom: 1rem;
+		margin-bottom: 3rem;
 
 		@media (max-width: $screen-xs-max) {
 			font-size: 2em;
@@ -51,6 +60,10 @@
 		font-size: 1.25em;
 		font-weight: 500;
 		line-height: 1.6;
+
+		&:first-of-type {
+			margin-top: .75rem;
+		}
 
 		@media (max-width: $screen-xs-max) {
 			text-align: center;
@@ -135,7 +148,6 @@
 		font-size: 1.25em;
 		font-weight: 700;
 		padding-bottom: 1rem;
-		border-bottom: 1px solid $accent;
 		margin-bottom: 1.25rem;
 	}
 
@@ -143,12 +155,12 @@
 		@extend .benefits__h2;
 		font-size: 3em;
 		line-height: 50px;
-		padding-bottom: 2rem;
+		padding-bottom: 0;
+		margin-bottom: 0;
 
 		@media (max-width: $screen-xs-max) {
 			font-size: 1.75em;
 			line-height: 1;
-			padding-bottom: 1rem;
 		}
 	}
 
@@ -159,6 +171,37 @@
 		@media (max-width: $screen-xs-max) {
 			font-size: 1.5rem;
 		}
+	}
+
+	.benefits__span--strike {
+		@extend .benefits__span--cta;
+    position: relative;
+    display: inline-block;
+	}
+	.benefits__span--strike::before {
+	    content: '';
+	    border-bottom: 3px solid $dark;
+	    width: 120%;
+	    position: absolute;
+	    left: -12px;
+	    top: 50%;
+	    -webkit-transform: skewY(-8deg);
+	    transform: skewY(-8deg);
+
+	    @media (max-width: $screen-sm-max) {
+	    	 width: 115%;
+	    	left: -6px;
+	    }
+	}
+
+	.benefits__p--savings {
+		text-align: center;
+		font-size: 1.125em;
+		font-weight: 700;
+		font-style: italic;
+		letter-spacing: 1px;
+		padding-bottom: 1rem;
+		border-bottom: 1px solid $accent;
 	}
 
 	.benefits__p {
@@ -174,6 +217,7 @@
 		text-align: center;
 		font-size: 1.125em;
 		font-style: italic;
+		margin-top: .75rem;
 	}
 
 	.benefits__ul {
