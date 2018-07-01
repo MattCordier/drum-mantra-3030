@@ -39,6 +39,14 @@
 	  }
 	}
 
+.main__btn--grey {
+	@extend .main__btn;
+	background-color: $medium;
+	&:hover {
+		background-color: darken($medium, 5%);
+	}
+
+}
 	/*------- Hero Section ---------*/
 	.hero__section {
 		background-color: $dark;
@@ -238,6 +246,7 @@
 
 		&:last-of-type {
 			margin-bottom: 2rem;
+			padding-left: 0;
 		}
 
 		@media (max-width: $screen-xs-max) {
