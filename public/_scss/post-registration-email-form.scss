@@ -1,0 +1,46 @@
+.klaviyo_styling {
+    max-width: 400px !important;
+}
+
+.klaviyo_submit_button {
+    display: block !important;
+    color: #FFF;
+    background-color: #CC5847 !important;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fa3230+0,af0c0c+100 */
+    background: #CC5847 !important; /* Old browsers */ /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */
+    font-size: 1.5em !important;
+    font-weight: 700 !important;
+    padding: 10px 25px !important;
+    border-radius: 5px !important;
+    border: none !important;
+    margin: 0 auto !important;
+
+    @media (max-width: 390px) {
+        font-size: 1.25em !important;
+    }
+}
+
+.klaviyo_field_group {
+    margin: 0 auto 20px !important;
+}
+
+.klaviyo_styling label {
+    color: #FFF;
+}
+
+.success_message {
+    color: #FFF;
+}
+
+.form-control {
+	margin: 0 auto;
+}
+
+.form-control {
+	height: 40px;
+	max-width: 250px;
+}
+
+label {
+	color: #FFF;
+}

@@ -40,7 +40,17 @@ event-code:
 	        <p class="hero__p">Develop an effective practice regimen with the 3030 and begin playing with more confidence and <span class="text-nowrap">mastery today.</span></p>
 
 	        <!-- <a class="main__btn">Join The Course</a> -->
-	        <a class="main__btn--grey">Course Closed</a>
+	        <a class="main__btn--grey" 
+	        	 data-toggle="modal" 
+	           data-target="#postRegistration" >
+	        	 Course Closed
+	       	</a>
+	       	<a class="hero__a" 
+	       		 data-toggle="modal" 
+						 data-target="#postRegistration">
+						Looking for powerful practice material? Click here to get a free lesson from the DrumMantra 3030.
+					</a>
+
 
 	        <!-- <div class="js-timer-div" data-end-time="2018-07-01">
 		        <p class="hero__p--time">
@@ -131,7 +141,11 @@ event-code:
 							<!-- <div id='product-component-543be1a168c' style="margin:  0 auto 4px;"></div>
 							include buy-button.html 
 							<p class="benefits__p--cta">protected by our <strong>30-day money-back</strong> guarantee</p> -->
-							<a class="main__btn--grey">Course Closed</a>
+							 <a class="main__btn--grey" 
+							 	 data-toggle="modal" 
+							    data-target="#postRegistration" >
+							 	 Course Closed
+								</a>
 						</div>
 							
 
@@ -273,7 +287,14 @@ event-code:
 					<h1 class="cta__h1 text-center">Are You Ready To Go Deeper With <span class="text-nowrap">Your Practice?</span></h1>
 
 	        <!-- <a class="main__btn">Join The Course</a> -->
-	        <a class="main__btn--grey">Course Closed</a>
+	         <a class="main__btn--grey" 
+	         	 data-toggle="modal" 
+	            data-target="#postRegistration" >
+	         	 Course Closed
+	        	</a>
+
+	        	<a class="hero__a" data-toggle="modal" 
+							    data-target="#postRegistration">Looking for powerful practice material? Click here to get a free lesson from the DrumMantra 3030.</a>
 	       <!--  <div class="js-timer-div" data-end-time="2018-07-01">
 		        <p class="hero__p--time">The course begins on July 1st, 2018. <br>
 		        	You only have 
@@ -290,4 +311,5 @@ event-code:
 		</div><!-- /container  -->
 	</section><!-- /section -->
 	<!-- END: Hero Section -->
+	{% include post-july-registration-modal.html %}
 </div><!-- /sales-page--wrapper -->
