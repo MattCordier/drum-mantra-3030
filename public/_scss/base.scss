@@ -5,6 +5,47 @@ html {
     font-size: 16px;
 }
 
+header {
+  background-color: $accent;
+  padding: 7px 0;
+  max-height: 50px;
+}
+
+.header__img {
+  max-height: 40px;
+}
+
+.main__btn {
+  display: block;
+  min-width: 250px;
+  max-width: 500px;
+  background-color: $accent;
+  color: #FFF;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin: 1.25rem auto;
+
+  &:hover {
+    cursor: pointer;
+    text-decoration: none;
+    background-color: darken($accent, 20%);
+    color: #fff
+  }
+}
+
+.main__btn--grey {
+  @extend .main__btn;
+  background-color: $medium;
+
+  &:hover {
+    background-color: darken($medium, 5%);
+  }
+}
+
 .video-container {
   position: relative;
   padding-bottom: 56.25%;
@@ -23,3 +64,5 @@ html {
   width: 100%;
   height: 100%; 
 }
+
+

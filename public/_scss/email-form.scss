@@ -4,20 +4,19 @@
 
 .klaviyo_submit_button {
     display: block !important;
-    background-color: #f93230 !important;
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fa3230+0,af0c0c+100 */
-    background: #fa3230 !important; /* Old browsers */ /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, #fa3230 0%,#af0c0c 100%) !important; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fa3230', endColorstr='#af0c0c',GradientType=0 ); /* IE6-9 */
+    min-width: 250px !important;
+    max-width: 500px !important;
+    background-color: $accent !important;
     font-size: 2em !important;
     font-weight: 700 !important;
     padding: 10px 25px 40px !important;
     border-radius: 5px !important;
-    margin: 0 auto 4rem !important;
+    margin: 1.25 auto !important;
 
-    @media (max-width: 390px) {
-        font-size: 1.25em !important;
-        padding: 10px 25px 30px !important;
+    &:hover {
+      cursor: pointer;
+      text-decoration: none;
+      background-color: darken($accent, 20%);
     }
 }
 
@@ -26,9 +25,9 @@
 }
 
 .klaviyo_styling label {
-    color: #FFF;
+    color: $dark;
 }
 
 .success_message {
-    color: #FFF;
+    color: $dark;
 }
