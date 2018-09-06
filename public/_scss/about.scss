@@ -1,0 +1,96 @@
+.about-page--wrapper {
+	h1, h2, h3, p {
+		color: $dark;
+	}
+
+	.divider {
+		border-bottom: 5px solid $dark;
+		max-width: 250px;
+		margin: 0 auto;
+	}
+
+	.dm3030-description__section, 
+	.dm3030-background__section, 
+	.dm3030-testimony__section {
+		padding: 2rem 0 0;
+	}
+	.dm3030-course-content__section {
+		padding: 2rem 0 7rem;
+	}
+
+	.dm3030-description__h1 {
+		font-size: 2.5em;
+		font-weight: 900;
+		margin-bottom: 2rem;
+	}
+
+	.dm3030-description__h2, 
+	.dm3030-background__h2, 
+	.dm3030-testimony__h2,
+	.dm3030-course-content__h2 {
+		font-size: 2em;
+		font-weight: 700;
+		margin-top: 4rem;
+		margin-bottom: 4rem;
+	}
+
+	.dm3030-description__p, 
+	.dm3030-background__p, 
+	.dm3030-testimony__p,
+	.dm3030-course-content__p {
+		font-size: 1.5em;
+		margin-bottom: 1.5rem;
+	}
+
+	.dm3030-testimony__h3--quotes {
+		@extend .dm3030-testimony__p;
+		margin: 4rem auto;
+	}
+
+	.dm3030-testimony__p--quotes {
+		font-size: 1.25em;
+		font-style: italic;
+
+		&.test-pilot {
+			font-weight: 700;
+			margin-bottom: 5rem;
+		}
+	}
+
+	.dm3030-course-info__div {
+		max-width: 600px;
+		padding: 3rem 0;
+		border: 3px solid $accent;
+		border-radius: 5px; 
+		margin: 1rem auto;
+	}
+	.dm3030-course-info__p--cta {
+		font-size: 1.75em;
+		font-weight: 700;
+	}
+
+	.dm3030-description__img {
+		border: 10px solid $dark;
+		margin: 4rem auto;
+	}
+
+	.dm3030-background__img {
+		background: url('/public/img/dm-3030-bg.jpg');
+		padding: 2rem 7rem;
+		margin: 2rem auto;
+	}
+
+	.dm3030-testimony__img {
+		margin-bottom: 4rem;
+	}
+
+	.dm3030-course-content__li {
+		font-size: 1.5em;
+		margin-bottom: 1.25rem;
+
+		&:last-of-type {
+			margin-bottom: 4rem;
+		}
+	}
+
+}//.about-page--wrapper

@@ -1,52 +1,9 @@
 .sales-page--wrapper {
-	$accent: #CC5847;
-	$light: #F5F5F5;
-	$medium: #ACACAE;
-	$dark: #1D2731;
-	width: 100%;
-	
-	header {
-		background-color: $accent;
-		padding: 7px 0;
-		max-height: 50px;
-	}
 
-	.header__img {
-		max-height: 40px;
-	}
+	width: 100%;
 
 	section {
 		padding: 3em 0;
-	}
-
-	.main__btn {
-		display: block;
-		min-width: 250px;
-		max-width: 500px;
-	  background-color: $accent;
-	  color: #FFF;
-	  text-align: center;
-	  font-size: 1.5em;
-	  font-weight: 700;
-	  text-transform: uppercase;
-	  padding: 10px 20px;
-	  border-radius: 5px;
-	  margin: 1.25rem auto;
-
-	  &:hover {
-	  	cursor: pointer;
-	  	text-decoration: none;
-	  	background-color: darken($accent, 20%);
-	  }
-	}
-
-	.main__btn--grey {
-		@extend .main__btn;
-		background-color: $medium;
-
-		&:hover {
-			background-color: darken($medium, 5%);
-		}
 	}
 
 	.hero__a {
@@ -524,13 +481,9 @@
 
 	.modal-content {
 		background: $dark;
-		padding: .5em 1em 1em;
+		padding-bottom: 1em;
 		border-radius: 10px;
 		border: 3px solid $accent;
-
-		@media (max-width: $screen-xs-max){
-			padding: .5em .25em 1em;
-		}
 	}
 
 	.modal-header {
