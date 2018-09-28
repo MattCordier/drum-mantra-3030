@@ -1,42 +1,40 @@
+<div id='product-component-d4b207eead1' style="margin:  0 auto 4px;"></div>
+    <script type="text/javascript">
+    /*<![CDATA[*/
 
-<script type="text/javascript">
-/*<![CDATA[*/
+    (function () {
+      var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+      if (window.ShopifyBuy) {
+        if (window.ShopifyBuy.UI) {
+          ShopifyBuyInit();
+        } else {
+          loadScript();
+        }
+      } else {
+        loadScript();
+      }
 
-(function () {
-  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
-  if (window.ShopifyBuy) {
-    if (window.ShopifyBuy.UI) {
-      ShopifyBuyInit();
-    } else {
-      loadScript();
-    }
-  } else {
-    loadScript();
-  }
+      function loadScript() {
+        var script = document.createElement('script');
+        script.async = true;
+        script.src = scriptURL;
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+        script.onload = ShopifyBuyInit;
+      }
 
-  function loadScript() {
-    var script = document.createElement('script');
-    script.async = true;
-    script.src = scriptURL;
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
-    script.onload = ShopifyBuyInit;
-  }
+      function ShopifyBuyInit() {
+        var client = ShopifyBuy.buildClient({
+          domain: 'the-drummantra.myshopify.com',
+          storefrontAccessToken: '619e732073452c78b483bdbc564fe3cd',
+        });
 
-  function ShopifyBuyInit() {
-    var client = ShopifyBuy.buildClient({
-      domain: 'the-drummantra.myshopify.com',
-      apiKey: '619e732073452c78b483bdbc564fe3cd',
-      appId: '6',
-    });
-
-    ShopifyBuy.UI.onReady(client).then(function (ui) {
-      ui.createComponent('product', {
-        id: [1322072670290],
-        node: document.getElementById('product-component-e6164420102'),
-        moneyFormat: '%24%7B%7Bamount%7D%7D',
-        options: {
+        ShopifyBuy.UI.onReady(client).then(function (ui) {
+          ui.createComponent('product', {
+            id: [1322072670290],
+            node: document.getElementById('product-component-d4b207eead1'),
+            moneyFormat: '%24%7B%7Bamount%7D%7D',
+            options: {
   "product": {
-    "buttonDestination": "checkout",
     "variantId": "all",
     "width": "285px",
     "contents": {
