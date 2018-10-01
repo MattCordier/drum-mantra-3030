@@ -31,21 +31,22 @@ event-code:
 	        <p class="hero__p">The DrumMantra 3030 is a <span class="hero__span">premium training course</span> designed to strengthen your fundamental sense of <span class="hero__span">time, rhythm, phrasing, coordination, odd time signatures, polymetric relationships, <span class="text-nowrap">and much more…</span></span> </p>
 	        <p class="hero__p">Develop an effective practice regimen with the 3030 and begin playing with more confidence and <span class="text-nowrap">mastery today.</span></p>
 
-	        <a class="main__btn">Join The Course</a>
-	        <!-- <a class="main__btn--grey">
-	        	 Registration Opens Soon…
+	        <!-- <a class="main__btn">Join The Course</a> -->
+	        <a class="main__btn--grey" data-toggle="modal" 
+							    data-target="#postRegistration">
+	        	 Course Closed
 	       	</a>
-	       	 	<p class="hero__a" >
+	       	 <!-- 	<p class="hero__a" >
 						Reistration for October 1st Course Opens September 28th</span>
 					</p> -->
-	      <!--  	<a class="hero__a" 
+	       	<a class="hero__a" 
 	       		 data-toggle="modal" 
 						 data-target="#postRegistration">
 						Looking for powerful practice material? Click here to stay up-to-date with Rich and the <span class="text-nowrap">DrumMantra 3030.</span>
-					</a> -->
+					</a>
 
 
-	        <div class="js-timer-div" data-end-time="2018-10-01">
+	        <!-- <div class="js-timer-div" data-end-time="2018-10-01">
 		        <p class="hero__p--time">
 		        	You only have 
 		        	<span class="text-nowrap">
@@ -55,7 +56,7 @@ event-code:
 		        		<span class="hero__span--time js-secs">XX</span> SECS 
 		        	</span>	
 		        	<span class="text-nowrap">To Register!</span></p>
-					</div>
+					</div> -->
 				</div><!-- /col -->
 			</div><!-- /row -->
 
@@ -134,20 +135,20 @@ event-code:
 					
 
 						<div>
-							{% include buy-button.html %}
+						
 							
 							
-							<p class="benefits__p--cta">protected by our <strong>30-day money-back</strong> guarantee</p>
-							 <!-- <a class="main__btn--grey" 
+							 <a class="main__btn--grey" 
 							 	 data-toggle="modal" 
 							    data-target="#postRegistration" >
-							 	 Registration Opens Soon…
-								</a> -->
+							 	 Course Closed
+								</a>
+							<p class="benefits__p--cta">protected by our <strong>30-day money-back</strong> guarantee</p>
 						</div>
 							
 
 
-		        <div class="js-timer-div" data-end-time="2018-10-01">
+		       <!--  <div class="js-timer-div" data-end-time="2018-10-01">
 			        <p class="hero__p--time cta">Early Registration Ends In<br class="visible-xs">
 			        	
 			        	<span class="text-nowrap">
@@ -158,7 +159,7 @@ event-code:
 			        		<span class="hero__span--time js-secs">XX</span> SECS 
 			        	</span>	
 			        </p>
-						</div>
+						</div> -->
 					</div><!-- /benefits__div--cta --> 
 				</div> <!-- /col -->
 			</div> <!-- /row -->
@@ -336,17 +337,18 @@ event-code:
 				<div class="col-xs-12">
 					<h1 class="cta__h1 text-center">Are You Ready To Go Deeper With <span class="text-nowrap">Your Practice?</span></h1>
 
-	        <a class="main__btn">Join The Course</a>
-	         <!-- <a class="main__btn--grey">
-	         	 Registration Opens Soon…
+	        <!-- <a class="main__btn">Join The Course</a> -->
+	         <a class="main__btn--grey" data-toggle="modal" 
+							    data-target="#postRegistration">
+	         	 Course Closed
 	        	</a>
-	        	<p class="hero__a" >
+	        	<!-- <p class="hero__a" >
 						Reistration for October 1st Course Opens September 28th</span>
 					</p> -->
 
-	        	<!-- <a class="hero__a" data-toggle="modal" 
-							    data-target="#postRegistration">Looking for powerful practice material? Click here to stay up-to-date with Rich and the <span class="text-nowrap">DrumMantra 3030.</span></a> -->
-	        <div class="js-timer-div" data-end-time="2018-10-01">
+	        	<a class="hero__a" data-toggle="modal" 
+							    data-target="#postRegistration">Looking for powerful practice material? Click here to stay up-to-date with Rich and the <span class="text-nowrap">DrumMantra 3030.</span></a>
+	       <!--  <div class="js-timer-div" data-end-time="2018-10-01">
 		        <p class="hero__p--time">You Only Have
 		        	<span class="text-nowrap">
 		        		<span class="hero__span--time js-days">XX</span> DAYS 
@@ -355,10 +357,11 @@ event-code:
 		        		<span class="hero__span--time js-secs">XX</span> SECS 
 		        	</span>	
 		        	<span class="text-nowrap">To Register!</span></p>
-					</div>
+					</div> -->
 				</div><!-- /col -->
 			</div><!-- /row -->
 		</div><!-- /container  -->
 	</section><!-- /section -->
 	<!-- END: Hero Section -->
+	{% include post-july-registration-modal.html %}
 </div><!-- /sales-page--wrapper -->
