@@ -11,8 +11,19 @@ header {
   max-height: 50px;
 }
 
+p {
+  letter-spacing: 1px;
+}
+
 .header__img {
   max-height: 40px;
+}
+
+.header__h1--title {
+  color: $light;
+  font-size: 2em;
+  font-weight: 700;
+  margin-top: 0;
 }
 
 .main__btn {
