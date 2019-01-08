@@ -253,7 +253,9 @@
 
 	/*------- Teacher Section ---------*/
 	.teacher__section {
-		background-color: $medium;
+		background: url('/public/img/sales-page/dm3030-water-bg.png') no-repeat center center;
+		background-size: cover;
+		// background-color: $medium;
 		padding-bottom: 1em;
 	}
 
