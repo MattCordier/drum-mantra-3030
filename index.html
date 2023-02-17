@@ -3,50 +3,81 @@ layout: default
 title: DrumMantra 3030
 subTitle: Get Ready To Go Deeper
 body-id: sales-page
-css: 
+css:
   - sales-page
   - main
-event-code: 
+event-code:
   - Lead
   - ViewContent
 ---
+
 <div class="sales-page--wrapper">
-	{% include nav.html %}
-	<!-- BEGIN: Hero Section -->
-	<section class="hero__section">
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-12">
-					<h1 class="hero__h1 text-center">Transform The Way You <span class="text-nowrap">Practice Drums</span></h1>
-				</div><!-- /col-->
-			</div><!-- /row -->		
-			<div class="row">
-				<div class="col-md-6">
+  {% include nav.html %} {% include testimonial-vids.html %}
+  <!-- BEGIN: Hero Section -->
+  <section class="hero__section">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h1 class="hero__h1 text-center">
+            Transform The Way You
+            <span class="text-nowrap">Practice Drums</span>
+          </h1>
+        </div>
+        <!-- /col-->
+      </div>
+      <!-- /row -->
+      <div class="row">
+        <div class="col-md-6">
+          <div class="video-container">
+            <iframe
+              class="course__iframe"
+              src="https://player.vimeo.com/video/277016636"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <!-- /video-container -->
+        </div>
+        <!-- /col -->
+        <div class="col-md-6">
+          <p class="hero__p">
+            The DrumMantra 3030 is a
+            <span class="hero__span">premium training course</span> designed to
+            strengthen your fundamental sense of
+            <span class="hero__span"
+              >time, rhythm, phrasing, coordination, odd time signatures,
+              polymetric relationships,
+              <span class="text-nowrap">and much more…</span></span
+            >
+          </p>
+          <p class="hero__p">
+            Develop an effective practice regimen with the 3030 and begin
+            playing with more confidence and
+            <span class="text-nowrap">mastery today.</span>
+          </p>
 
-					<div class="video-container">
-	          <iframe class="course__iframe" src="https://player.vimeo.com/video/277016636" frameborder="0" allowfullscreen></iframe>
-	        </div><!-- /video-container -->
-	      </div><!-- /col -->
-	      <div class="col-md-6">  
-	        <p class="hero__p">The DrumMantra 3030 is a <span class="hero__span">premium training course</span> designed to strengthen your fundamental sense of <span class="hero__span">time, rhythm, phrasing, coordination, odd time signatures, polymetric relationships, <span class="text-nowrap">and much more…</span></span> </p>
-	        <p class="hero__p">Develop an effective practice regimen with the 3030 and begin playing with more confidence and <span class="text-nowrap">mastery today.</span></p>
-
-	        <!-- <a class="main__btn js--main__btn">Join The Course</a> -->
-	        <a class="main__btn--grey" data-toggle="modal" 
-							    data-target="#postRegistration">
-	        	 Course Closed
-	       	</a>
-	       	 	<!-- <p class="hero__a" >
+          <!-- <a class="main__btn js--main__btn">Join The Course</a> -->
+          <a
+            class="main__btn--grey"
+            data-toggle="modal"
+            data-target="#postRegistration"
+          >
+            Course Closed
+          </a>
+          <!-- <p class="hero__a" >
 						Reistration for Feb 1st Course Opens January 1st</span>
 					</p> -->
-	      <a class="hero__a" 
-	       		 data-toggle="modal" 
-						 data-target="#postRegistration">
-						Looking for powerful practice material? Click here to stay up-to-date with Rich and the <span class="text-nowrap">DrumMantra 3030.</span>
-					</a>
+          <a
+            class="hero__a"
+            data-toggle="modal"
+            data-target="#postRegistration"
+          >
+            Looking for powerful practice material? Click here to stay
+            up-to-date with Rich and the
+            <span class="text-nowrap">DrumMantra 3030.</span>
+          </a>
 
-
-	        <!-- <div class="js-timer-div" data-end-time="2019-02-01">
+          <!-- <div class="js-timer-div" data-end-time="2019-02-01">
 		        <p class="hero__p--time">
 		        	You only have 
 		        	<span class="text-nowrap">
@@ -57,79 +88,120 @@ event-code:
 		        	</span>	
 		        	<span class="text-nowrap">To Register!</span></p>
 					</div> -->
-				</div><!-- /col -->
-			</div><!-- /row -->
+        </div>
+        <!-- /col -->
+      </div>
+      <!-- /row -->
+    </div>
+    <!-- /container  -->
+  </section>
+  <!-- /section -->
+  <!-- END: Hero Section -->
 
+  <!-- BEGIN: Benefits Section -->
+  <section class="benefits__section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="benefits__div">
+            <h2 class="benefits__h2">
+              30 Focused Minutes <span class="text-nowrap">A Day</span>
+            </h2>
 
-		</div><!-- /container  -->
-	</section><!-- /section -->
-	<!-- END: Hero Section -->
+            <p class="benefits__p">
+              Lots of drummers spend between 3 and 5 hours a week in the
+              practice room but rarely follow a clear, consistent routine. The
+              biggest challenge is staying focused, followed by constantly
+              second guessing whether they are working on the
+              <em>“right stuff.”</em>
+            </p>
 
-	<!-- BEGIN: Benefits Section -->
-	<section class="benefits__section">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6">
-					<div class="benefits__div">
-						<h2 class="benefits__h2">
-							30 Focused Minutes <span class="text-nowrap">A Day</span>
-						</h2>
+            <p class="benefits__p">
+              The DrumMantra 3030 is a “cross-training” course designed to
+              develop multiple foundational drumming skills at once.
+            </p>
 
-						<p class="benefits__p">Lots of drummers spend between 3 and 5 hours a week in the practice room but rarely follow a clear, consistent routine. The biggest challenge is staying focused, followed by constantly second guessing whether they are working on the <em>“right stuff.”</em></p>
+            <p class="benefits__p">
+              The length and sequence of each exercise was carefully crafted to
+              develop muscle memory, focus, patience, feel, groove, and
+              technique.
+            </p>
 
-						<p class="benefits__p">The DrumMantra 3030 is a “cross-training” course designed to develop multiple foundational drumming skills at once.</p>
+            <p class="benefits__p">
+              The goal of the course is to deepen the ability to quickly and
+              efficiently express creative and appropriate musical ideas in the
+              moment.
+            </p>
 
-						<p class="benefits__p">The length and sequence of each exercise was carefully crafted to develop muscle memory, focus, patience, feel, groove, and technique.</p>
+            <p class="benefits__p">
+              “DrumMantra” means rhythmic repetition with focused attention.
+              Each rhythmic “mantra” is played repetitively for a duration
+              required to begin developing muscle memory. When muscle memory of
+              a pattern is achieved, it can be expressed in a musical way with
+              ease and confidence.
+            </p>
+          </div>
+        </div>
+        <!-- /col -->
 
-						<p class="benefits__p">The goal of the course is to deepen the ability to quickly and efficiently express creative and appropriate musical ideas in the moment.</p>
+        <div class="col-md-6">
+          <div class="benefits__div">
+            <h2 class="benefits__h2">
+              What Is Covered In The DrumMantra 3030?
+            </h2>
 
-						<p class="benefits__p">“DrumMantra” means rhythmic repetition with focused attention. Each rhythmic “mantra” is played repetitively for a duration required to begin developing muscle memory. When muscle memory of a pattern is achieved, it can be expressed in a musical way with ease and confidence.</p>
+            <ul class="benefits__ul">
+              <li class="benefits__li">
+                Exercises in three different time signatures: 4/4, 3/4, and 5/4
+              </li>
+              <li class="benefits__li">
+                5 different stickings - <br />
+                RLRL, LRLR, RRLL, LLRR,
+                <span class="text-nowrap">and RLRR LRLL</span>
+              </li>
+              <li class="benefits__li">
+                Accent permutations and pulse displacements
+              </li>
+              <li class="benefits__li">The <em>“Moving Click”</em></li>
+              <li class="benefits__li">
+                Comprehensive and in-depth coordination study of the 3:4 and 5:4
+                polymetric relationships
+              </li>
+              <li class="benefits__li">
+                Advanced phrasing concepts and rhythmic reading
+              </li>
+              <li class="benefits__li">
+                Progressive coordination between the hands and one foot
+              </li>
+              <li class="benefits__li">
+                Three “meditations,” which are exercises that last around 35
+                minutes without stopping
+              </li>
+              <li class="benefits__li">
+                Develop the ability to discern a 1bpm change in tempo through
+                exercises designed to train your internal clock
+              </li>
+              <li class="benefits__li">Drum set modifications</li>
+            </ul>
+          </div>
+        </div>
+        <!-- /col -->
+      </div>
+      <!-- /row -->
 
-						
-					</div>
-				</div><!-- /col -->
+      <div class="row">
+        <div class="col-md-12">
+          <div class="benefits__div--cta">
+            <h2 id="cta" class="benefits__h2--cta" style="margin-bottom: 26px">
+              The DrumMantra 3030<br />
+            </h2>
 
-				<div class="col-md-6">
-					<div class="benefits__div">
-						<h2 class="benefits__h2">
-							What Is Covered In The DrumMantra 3030?
-						</h2>
+            <h2 class="spots__h2 text-center">Winter Session Sold Out</h2>
 
-						<ul class="benefits__ul">
-							<li class="benefits__li">Exercises in three different time signatures: 4/4, 3/4, and 5/4</li>
-							<li class="benefits__li">5 different stickings - <br> RLRL, LRLR, RRLL, LLRR, <span class="text-nowrap">and RLRR LRLL</span></li>
-							<li class="benefits__li">Accent permutations and pulse displacements</li>
-							<li class="benefits__li">The <em>“Moving Click”</em></li>
-							<li class="benefits__li">Comprehensive and in-depth coordination study of the 3:4 and 5:4 polymetric relationships</li>
-							<li class="benefits__li">Advanced phrasing concepts and rhythmic reading</li>
-							<li class="benefits__li">Progressive coordination between the hands and one foot</li>
-							<li class="benefits__li">Three “meditations,” which are exercises that last around 35 minutes without stopping</li>
-							<li class="benefits__li">Develop the ability to discern a 1bpm change in tempo through exercises designed to train your internal clock</li>
-							<li class="benefits__li">Drum set modifications</li>
+            <h2 class="spots__h2 text-center">Regular Price $149</h2>
 
-						</ul>
-
-
-					</div>
-				</div><!-- /col -->
-			</div><!-- /row -->
-
-			
-			<div class="row">
-				<div class="col-md-12">
-					<div class="benefits__div--cta">
-						<h2 id="cta" class="benefits__h2--cta" style="margin-bottom: 26px;">
-								The DrumMantra 3030<br>
-							</h2>
-
-							<h2 class="spots__h2 text-center">Winter Session Sold Out</h2>
-
-							<h2 class="spots__h2 text-center">Regular Price $149</h2>
-
-						<div class="row"> 
-							
-
-							<!-- <div class="col-xs-12 text-center">
+            <div class="row">
+              <!-- <div class="col-xs-12 text-center">
 								<div class="sale__div">
 									<p>January 21-31</p>
 									
@@ -137,35 +209,51 @@ event-code:
 									<p class="benefits__p--savings">Save 13%</p>
 								</div>
 							</div> -->
-						</div>
+            </div>
 
-						<ul class="benefits__ul">
-							<li class="benefits__li--cta">30 high quality, 1080p HD videos with over 15 hours of practice material</li>
-							<li class="benefits__li--cta">Over 125 original play along compositions</li>
-							<li class="benefits__li--cta">Downloadable pdf of each day's exercises. Over 200 pages!</li>
-							<li class="benefits__li--cta">Daily emails for motivation, inspiration, and guidance </li>
-							<li class="benefits__li--cta">Weekly live video Q&A chats</li>
-							<li class="benefits__li--cta">Lifetime access to the course material</li>
-							<li class="benefits__li--cta"><img src="/public/img/sales-page/slack.png" style="height: 30px;"> Exclusive access to the DrumMantra 3030 Slack Chat Room where you can ask for help and chat with other learners</li>
-						</ul>	
-					
+            <ul class="benefits__ul">
+              <li class="benefits__li--cta">
+                30 high quality, 1080p HD videos with over 15 hours of practice
+                material
+              </li>
+              <li class="benefits__li--cta">
+                Over 125 original play along compositions
+              </li>
+              <li class="benefits__li--cta">
+                Downloadable pdf of each day's exercises. Over 200 pages!
+              </li>
+              <li class="benefits__li--cta">
+                Daily emails for motivation, inspiration, and guidance
+              </li>
+              <li class="benefits__li--cta">Weekly live video Q&A chats</li>
+              <li class="benefits__li--cta">
+                Lifetime access to the course material
+              </li>
+              <li class="benefits__li--cta">
+                <img
+                  src="/public/img/sales-page/slack.png"
+                  style="height: 30px"
+                />
+                Exclusive access to the DrumMantra 3030 Slack Chat Room where
+                you can ask for help and chat with other learners
+              </li>
+            </ul>
 
-						<div>
-						
-							
-							
-							 <a class="main__btn--grey" 
-							 	 data-toggle="modal" 
-							    data-target="#postRegistration" >
-							 	 Course Closed
-								</a>
+            <div>
+              <a
+                class="main__btn--grey"
+                data-toggle="modal"
+                data-target="#postRegistration"
+              >
+                Course Closed
+              </a>
 
-							<p class="benefits__p--cta">protected by our <strong>30-day money-back</strong> guarantee</p>
-						</div>
-							
+              <p class="benefits__p--cta">
+                protected by our <strong>30-day money-back</strong> guarantee
+              </p>
+            </div>
 
-
-		        <!-- <div class="js-timer-div" data-end-time="2019-02-01">
+            <!-- <div class="js-timer-div" data-end-time="2019-02-01">
 			        <p class="hero__p--time cta">Registration Ends In<br class="visible-xs">
 			        	
 			        	<span class="text-nowrap">
@@ -177,212 +265,344 @@ event-code:
 			        	</span>	
 			        </p>
 						</div> -->
-					</div><!-- /benefits__div--cta --> 
-				</div> <!-- /col -->
-			</div> <!-- /row -->
-		</div> <!-- /container  -->
-	</section><!-- /section -->
-	<!-- END: Benefits Section -->
+          </div>
+          <!-- /benefits__div--cta -->
+        </div>
+        <!-- /col -->
+      </div>
+      <!-- /row -->
+    </div>
+    <!-- /container  -->
+  </section>
+  <!-- /section -->
+  <!-- END: Benefits Section -->
 
-	<!-- BEGIN: Teacher Section -->
-	<section class="teacher__section">
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-12">
-					<div class="about">
+  <!-- BEGIN: Teacher Section -->
+  <section class="teacher__section">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="about">
             <div class="row">
               <div class="col-md-4">
-                <img src="/public/img/sales-page/rich-profile.png" title="Rich Stitzel" class="img-responsive center-block about__img--rich" />
-              </div><!-- /col -->
-              
+                <img
+                  src="/public/img/sales-page/rich-profile.png"
+                  title="Rich Stitzel"
+                  class="img-responsive center-block about__img--rich"
+                />
+              </div>
+              <!-- /col -->
+
               <div class="col-md-8">
                 <h1 class="about__h1">Meet Rich Stitzel</h1>
-                
-                <p class="about__p">Drummer, Composer, Author, &amp; Educator</p>
-                
-                <p class="about__p--details">I’m the creator of <em>The DrumMantra</em> system, and author of <em>The Foundational Series</em> and <em>The Primary Series</em> books. </p>
 
-                <p class="about__p--details">I have been a professional player and educator since 1991 and have dedicated the past ten years to developing a method of practice that is helping drummers all over the world. </p>
+                <p class="about__p">
+                  Drummer, Composer, Author, &amp; Educator
+                </p>
 
-                <p class="about__p--details"><em>The DrumMantra3030</em> is is a course that brings many of these concepts to life. I dedicated 4-6 hours a day, everyday, for 3 months to create the exercises, sequencing, play-alongs, and videos to make the 3030 an effective and powerful practice tool for you.</p>
+                <p class="about__p--details">
+                  I'm the creator of <em>The DrumMantra</em> system, and author
+                  of <em>The Foundational Series</em> and
+                  <em>The Primary Series</em> books.
+                </p>
 
-                <p class="about__p--details">I can say with confidence that the 3030 will address the core issues in your playing and quickly take you the next level. With a deeper understanding of time, rhythm, phrasing, coordination, odd time signatures, and polymetric relationships, your playing will reach a whole new level.</p>
-              </div><!-- /col -->
-            </div><!-- /row -->
-					</div><!-- /about -->
-				</div><!-- /col -->
-			</div><!-- /row -->
+                <p class="about__p--details">
+                  I have been a professional player and educator since 1991 and
+                  have dedicated the past ten years to developing a method of
+                  practice that is helping drummers all over the world.
+                </p>
 
-			<div class="row">
-				<div class="col-xs-12 col-md-5">
-					<div class="quote-card__div first">
-						<p class="quote__p">" A great 30 day course that I guarantee will improve your feel, timing and independence! I recommend this course to all my students and will do it again myself.  "</p>
+                <p class="about__p--details">
+                  <em>The DrumMantra3030</em> is is a course that brings many of
+                  these concepts to life. I dedicated 4-6 hours a day, everyday,
+                  for 3 months to create the exercises, sequencing, play-alongs,
+                  and videos to make the 3030 an effective and powerful practice
+                  tool for you.
+                </p>
 
-						<div class="student-quote__div">
-							<img src="/public/img/sales-page/stefan-v.png" class="student-quote__img">
-							<p class="student-quote__p--name">Stefan V. <br>
-								<span class="student-quote__p--detail">The Hague, Netherlands</span>
-							</p>
-						</div>
-					</div>
-				</div><!-- /col -->
+                <p class="about__p--details">
+                  I can say with confidence that the 3030 will address the core
+                  issues in your playing and quickly take you the next level.
+                  With a deeper understanding of time, rhythm, phrasing,
+                  coordination, odd time signatures, and polymetric
+                  relationships, your playing will reach a whole new level.
+                </p>
+              </div>
+              <!-- /col -->
+            </div>
+            <!-- /row -->
+          </div>
+          <!-- /about -->
+        </div>
+        <!-- /col -->
+      </div>
+      <!-- /row -->
 
-				<div class="col-xs-12 col-md-7">
-					<div class="quote-card__div">
-						<p class="quote__p">" This past week was a building block and after today I’m feeling more confident and relaxed. My mental focus has improved within the week and I feel it has impacted me as a teacher. Thanks Rich and everyone on this journey! I’m inspired everyday to become a better musician and educator by being apart of this project! Thanks guys! "</p>
+      <div class="row">
+        <div class="col-xs-12 col-md-5">
+          <div class="quote-card__div first">
+            <p class="quote__p">
+              " A great 30 day course that I guarantee will improve your feel,
+              timing and independence! I recommend this course to all my
+              students and will do it again myself. "
+            </p>
 
-						<div class="student-quote__div">
-							<img src="/public/img/sales-page/josh-beyers.png" class="student-quote__img">
-							<p class="student-quote__p--name">Josh B. <br>
-								<span class="student-quote__p--detail">Denver, Colorado</span>
-							</p>
-						</div>
-					</div>
-				</div><!-- /col -->
-			</div><!-- /row -->
+            <div class="student-quote__div">
+              <img
+                src="/public/img/sales-page/stefan-v.png"
+                class="student-quote__img"
+              />
+              <p class="student-quote__p--name">
+                Stefan V. <br />
+                <span class="student-quote__p--detail"
+                  >The Hague, Netherlands</span
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- /col -->
 
-			<div class="row">
-				<div class="col-xs-12 col-md-7">
-					<div class="quote-card__div">
-						<p class="quote__p">" A definitive workout about polyrhythms, about melodies inside them, about hearing yourself inside the rhythms. It would also let doors to be opened, if you find new ways to apply the material. Definitely, it would make you a better drummer, and would greatly increase your sense of rhythm. Beautiful material. "</p>
+        <div class="col-xs-12 col-md-7">
+          <div class="quote-card__div">
+            <p class="quote__p">
+              " This past week was a building block and after today I'm feeling
+              more confident and relaxed. My mental focus has improved within
+              the week and I feel it has impacted me as a teacher. Thanks Rich
+              and everyone on this journey! I'm inspired everyday to become a
+              better musician and educator by being apart of this project!
+              Thanks guys! "
+            </p>
 
-						<div class="student-quote__div">
-							<img src="/public/img/sales-page/carlos-p.png" class="student-quote__img">
-							<p class="student-quote__p--name">Carlos P. <br>
-								<span class="student-quote__p--detail">Santa Cruz de Tenerife, Spain</span>
-							</p>
-						</div>
-					</div>
-				</div><!-- /col -->
+            <div class="student-quote__div">
+              <img
+                src="/public/img/sales-page/josh-beyers.png"
+                class="student-quote__img"
+              />
+              <p class="student-quote__p--name">
+                Josh B. <br />
+                <span class="student-quote__p--detail">Denver, Colorado</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- /col -->
+      </div>
+      <!-- /row -->
 
-				<div class="col-xs-12 col-md-5">
-					<div class="quote-card__div">
-						<p class="quote__p">" Love this course. You really develop an understanding of time in different time signatures throughout the course! I’ve noticed an improvement in my playing!  "</p>
+      <div class="row">
+        <div class="col-xs-12 col-md-7">
+          <div class="quote-card__div">
+            <p class="quote__p">
+              " A definitive workout about polyrhythms, about melodies inside
+              them, about hearing yourself inside the rhythms. It would also let
+              doors to be opened, if you find new ways to apply the material.
+              Definitely, it would make you a better drummer, and would greatly
+              increase your sense of rhythm. Beautiful material. "
+            </p>
 
-						<div class="student-quote__div">
-							<img src="/public/img/sales-page/gustavo-r.png" class="student-quote__img">
-							<p class="student-quote__p--name">Gustavo R. <br>
-								<span class="student-quote__p--detail">Plainfield, Illinois</span>
-							</p>
-						</div>
-					</div>
-				</div><!-- /col -->
-			</div><!-- /row -->
-			
-			<div class="row">
-				<div class="col-xs-12 col-md-7">
-					<div class="quote-card__div">
-						<p class="quote__p">" The DrumMantra 3030 project is a great resource for all drummers and musicians alike. By committing to this course and the philosophy of the DrumMantra practice you will gain a greater understanding of time, rhythmic awareness, concentration, and musicianship. You will learn and be challenged from this course, learn how to learn because of this course, and you will be a better musician and person. Happy Drumming! Cheers!  "</p>
+            <div class="student-quote__div">
+              <img
+                src="/public/img/sales-page/carlos-p.png"
+                class="student-quote__img"
+              />
+              <p class="student-quote__p--name">
+                Carlos P. <br />
+                <span class="student-quote__p--detail"
+                  >Santa Cruz de Tenerife, Spain</span
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- /col -->
 
-						<div class="student-quote__div">
-							<img src="/public/img/sales-page/bradley-g.png" class="student-quote__img">
-							<p class="student-quote__p--name">Bradley G. <br>
-								<span class="student-quote__p--detail">Winnipeg, Manitoba</span>
-							</p>
-						</div>
-					</div>
-				</div><!-- /col -->
+        <div class="col-xs-12 col-md-5">
+          <div class="quote-card__div">
+            <p class="quote__p">
+              " Love this course. You really develop an understanding of time in
+              different time signatures throughout the course! I've noticed an
+              improvement in my playing! "
+            </p>
 
-				<div class="col-xs-12 col-md-5">
-					<div class="quote-card__div">
-						<p class="quote__p">" DrumMantra3030 is such a fun way to become a better drummer!! Highly recommended!! <br> 
-            You'll feel the improvement right AWAY!! "</p>
+            <div class="student-quote__div">
+              <img
+                src="/public/img/sales-page/gustavo-r.png"
+                class="student-quote__img"
+              />
+              <p class="student-quote__p--name">
+                Gustavo R. <br />
+                <span class="student-quote__p--detail"
+                  >Plainfield, Illinois</span
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- /col -->
+      </div>
+      <!-- /row -->
 
-						<div class="student-quote__div">
-							<img src="/public/img/sales-page/geo-m.png" class="student-quote__img">
-							<p class="student-quote__p--name">Geo M. <br>
-								<span class="student-quote__p--detail">Hollywood, California</span>
-							</p>
-						</div>
-					</div>
-				</div><!-- /col -->
-			</div><!-- /row -->
+      <div class="row">
+        <div class="col-xs-12 col-md-7">
+          <div class="quote-card__div">
+            <p class="quote__p">
+              " The DrumMantra 3030 project is a great resource for all drummers
+              and musicians alike. By committing to this course and the
+              philosophy of the DrumMantra practice you will gain a greater
+              understanding of time, rhythmic awareness, concentration, and
+              musicianship. You will learn and be challenged from this course,
+              learn how to learn because of this course, and you will be a
+              better musician and person. Happy Drumming! Cheers! "
+            </p>
 
-			<div class="row">
-				<div class="col-xs-12 col-md-7">
-					<div class="quote-card__div">
-						<p class="quote__p">" The DrumMantra 3030 is a great resource to learn from and is now apart of my daily morning routine even after the 30 days have been up. It has made me more rhythmically aware, it’s helped build upon my timing and independence, and with very detailed play along tracks to assist you the whole time, my accuracy, feel, and ear has improved. I highly recommend trying it for yourself! "</p>
+            <div class="student-quote__div">
+              <img
+                src="/public/img/sales-page/bradley-g.png"
+                class="student-quote__img"
+              />
+              <p class="student-quote__p--name">
+                Bradley G. <br />
+                <span class="student-quote__p--detail">Winnipeg, Manitoba</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- /col -->
 
-						<div class="student-quote__div">
-							<img src="/public/img/sales-page/ryan-c.png" class="student-quote__img">
-							<p class="student-quote__p--name">Ryan C. <br>
-								<span class="student-quote__p--detail">Bowmanville, Ontario</span>
-							</p>
-						</div>
-					</div>
-				</div><!-- /col -->
+        <div class="col-xs-12 col-md-5">
+          <div class="quote-card__div">
+            <p class="quote__p">
+              " DrumMantra3030 is such a fun way to become a better drummer!!
+              Highly recommended!! <br />
+              You'll feel the improvement right AWAY!! "
+            </p>
 
-				<div class="col-xs-12 col-md-5">
-					<div class="quote-card__div">
-						<p class="quote__p">" I took the July 2018 DrumMantra3030 course and it really was one of the best decisions I could have made. "</p>
+            <div class="student-quote__div">
+              <img
+                src="/public/img/sales-page/geo-m.png"
+                class="student-quote__img"
+              />
+              <p class="student-quote__p--name">
+                Geo M. <br />
+                <span class="student-quote__p--detail"
+                  >Hollywood, California</span
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- /col -->
+      </div>
+      <!-- /row -->
 
-						<div class="student-quote__div">
-							<img src="/public/img/sales-page/darren-b.png" class="student-quote__img">
-							<p class="student-quote__p--name">Darren B.<br>
-								<span class="student-quote__p--detail">Paris, France</span>
-							</p>
-						</div>
-					</div>
-				</div><!-- /col -->
-			</div><!-- /row -->
-		</div><!-- /container  -->
-	</section><!-- /section -->
-	<!-- END: Teacher Section -->
+      <div class="row">
+        <div class="col-xs-12 col-md-7">
+          <div class="quote-card__div">
+            <p class="quote__p">
+              " The DrumMantra 3030 is a great resource to learn from and is now
+              apart of my daily morning routine even after the 30 days have been
+              up. It has made me more rhythmically aware, it's helped build upon
+              my timing and independence, and with very detailed play along
+              tracks to assist you the whole time, my accuracy, feel, and ear
+              has improved. I highly recommend trying it for yourself! "
+            </p>
 
+            <div class="student-quote__div">
+              <img
+                src="/public/img/sales-page/ryan-c.png"
+                class="student-quote__img"
+              />
+              <p class="student-quote__p--name">
+                Ryan C. <br />
+                <span class="student-quote__p--detail"
+                  >Bowmanville, Ontario</span
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- /col -->
 
-	<!-- BEGIN: Guarantee Section -->
-	<section class="guarantee__section">
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-12 col-sm-4 col-sm-push-8">
-					<img src="/public/img/sales-page/3030-guarantee.png" class="img-responsive center-block">
-				</div><!-- /col -->
-				<div class="col-xs-12 col-sm-8 col-sm-pull-4 col-md-7 col-lg-pull-3">
-					<h2 class="guarantee__h2">30-Day Money-Back Guarantee</h2>
-					<p class="guarantee__p">I have complete confidence that the <em>DrumMantra 3030</em> course will be an absolute game changer for your playing. In 30 days you will have an opportunity to view the <em>enitre course</em>. If you decide it isn't for you, simply contact me and I will immediately give you a 100% refund…no questions asked.</p>
-					<p class="guarantee__p--name">Rich Stitzel</p>
-				</div><!-- /col -->
-			</div><!-- /row -->
-		</div><!-- /container  -->
-	</section><!-- /section -->
-	<!-- END: Guarantee Section -->
-	
-	<!-- BEGIN: Hero Section -->
-	<section class="cta__section">
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-12">
-					<h1 class="cta__h1 text-center">Are You Ready To Go Deeper With <span class="text-nowrap">Your Practice But Want A Sneak Preview?</span></h1>
+        <div class="col-xs-12 col-md-5">
+          <div class="quote-card__div">
+            <p class="quote__p">
+              " I took the July 2018 DrumMantra3030 course and it really was one
+              of the best decisions I could have made. "
+            </p>
 
-	        <a href="https://drummantra3030.com/course-sampler/" class="main__btn" target="_blank">Sample The Course</a>
-	         <!-- <a class="main__btn--grey" data-toggle="modal" 
-							    data-target="#postRegistration">
-	         	 Course Closed
-	        	</a>
-	        	<p class="hero__a" >
-						Reistration for February 1st Course Opens January 1st
-					</p> -->
+            <div class="student-quote__div">
+              <img
+                src="/public/img/sales-page/darren-b.png"
+                class="student-quote__img"
+              />
+              <p class="student-quote__p--name">
+                Darren B.<br />
+                <span class="student-quote__p--detail">Paris, France</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- /col -->
+      </div>
+      <!-- /row -->
+    </div>
+    <!-- /container  -->
+  </section>
+  <!-- /section -->
+  <!-- END: Teacher Section -->
 
-						<!-- <a class="hero__a" 
-							 data-toggle="modal" 
-							 data-target="#postRegistration">
-							 Looking for powerful practice material? Click here to stay up-to-date with Rich and the 
-							 <span class="text-nowrap">DrumMantra 3030.</span>
-						</a> -->
-	        <!-- <div class="js-timer-div" data-end-time="2019-02-01">
-		        <p class="hero__p--time">You Only Have
-		        	<span class="text-nowrap">
-		        		<span class="hero__span--time js-days">XX</span> DAYS 
-		        		<span class="hero__span--time js-hours">XX</span> HRS 
-		        		<span class="hero__span--time js-mins">XX</span> MINS 
-		        		<span class="hero__span--time js-secs">XX</span> SECS 
-		        	</span>	
-		        	<span class="text-nowrap">To Register!</span></p>
-					</div> -->
-				</div><!-- /col -->
-			</div><!-- /row -->
-		</div><!-- /container  -->
-	</section><!-- /section -->
-	<!-- END: Hero Section -->
-	{% include post-july-registration-modal.html %}
-</div><!-- /sales-page--wrapper -->
+  <!-- BEGIN: Guarantee Section -->
+  <section class="guarantee__section">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-4 col-sm-push-8">
+          <img
+            src="/public/img/sales-page/3030-guarantee.png"
+            class="img-responsive center-block"
+          />
+        </div>
+        <!-- /col -->
+        <div class="col-xs-12 col-sm-8 col-sm-pull-4 col-md-7 col-lg-pull-3">
+          <h2 class="guarantee__h2">30-Day Money-Back Guarantee</h2>
+          <p class="guarantee__p">
+            I have complete confidence that the <em>DrumMantra 3030</em> course
+            will be an absolute game changer for your playing. In 30 days you
+            will have an opportunity to view the <em>enitre course</em>. If you
+            decide it isn't for you, simply contact me and I will immediately
+            give you a 100% refund…no questions asked.
+          </p>
+          <p class="guarantee__p--name">Rich Stitzel</p>
+        </div>
+        <!-- /col -->
+      </div>
+      <!-- /row -->
+    </div>
+    <!-- /container  -->
+  </section>
+  <!-- /section -->
+  <!-- END: Guarantee Section -->
+
+  <!-- BEGIN: Hero Section -->
+  <section class="cta__section">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h1 class="cta__h1 text-center">
+            Are You Ready To Go Deeper With
+            <span>Your Practice But Want A Sneak Preview? </span>
+          </h1>
+
+          <a href="/course-sampler/" class="main__btn">Sample The Course</a>
+        </div>
+        <!-- /col -->
+      </div>
+      <!-- /row -->
+    </div>
+    <!-- /container  -->
+  </section>
+  <!-- /section -->
+  <!-- END: Hero Section -->
+  {% include post-july-registration-modal.html %}
+</div>
+<!-- /sales-page--wrapper -->
